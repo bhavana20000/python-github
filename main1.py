@@ -1,13 +1,14 @@
-def reverse(s):
-  str = ""
-  for i in s:
-    str = i + str
-  return str
-  
-s = "Geeksforgeeks"
-  
-print ("The original string  is : ",end="")
-print (s)
-  
-print ("The reversed string(using loops) is : ",end="")
-print (reverse(s))
+# function which return reverse of a string
+ 
+def isPalindrome(s):
+    return s == s[::-1]
+ 
+ 
+# Driver code
+s = "malayalam"
+ans = isPalindrome(s)
+ 
+if ans:
+    print("Yes")
+else:
+    print("No")
